@@ -1,0 +1,21 @@
+// C++ program to find the number of even and odd numbers from 0-100
+#include <iostream>
+
+int main() {
+    int evenCount = 0;
+    int oddCount = 0;
+
+    for (int i = 0; i <= 100; ++i) {
+        if (i % 2 == 0) {
+            evenCount++;
+        } else {
+            oddCount++;
+        }
+    }
+
+    std::cout << "Number of even numbers between 0 and 100: " << evenCount << std::endl;
+    std::cout << "Number of odd numbers between 0 and 100: " << oddCount << std::endl;
+
+    return 0;
+}
+
